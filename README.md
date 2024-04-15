@@ -15,6 +15,15 @@ Nero comes from the greek word for water, νερό.
 
 Well, I guess I cannot say "zero", because I picked a name and made a repository. But, still, zero.
 
+## Building
+
+This project separates out signing and bundle identifier details.
+
+- clone the repo
+- `cp User.xcconfig.template User.xcconfig`
+- update `User.xcconfig` with your personal information
+- build/run with Xcode
+
 ## Contributing and Collaboration
 
 I'd love to hear from you! Get in touch via [mastodon](https://mastodon.social/@mattiem), an issue, or a pull request.
