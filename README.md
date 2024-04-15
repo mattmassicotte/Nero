@@ -3,7 +3,7 @@ A watchOS app to help you care for aquariums
 
 # Story
 
-My son wanted an aquarium for his birthday. So we got a 40L salt water tank. But, it turns out that taking care of an aquarium is complex! Water chemistry is really important, and the smaller the volumn, the more sensitive it is.
+My son wanted an aquarium for his birthday. So we got a 40L salt water tank. But, it turns out that taking care of an aquarium is complex! Water chemistry is really important, and the smaller the volume, the more sensitive it is.
 
 Of course, I immediately began thinking of ways to build a little tool to me with the maintainance and monitoring. Plus, I'e always wanted to experiment with watchOS. So, why not?
 
