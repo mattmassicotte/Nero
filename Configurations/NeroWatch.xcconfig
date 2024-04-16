@@ -1,0 +1,4 @@
+PRODUCT_MODULE_NAME = NeroWatch
+PRODUCT_NAME = NeroWatch
+
+SDKROOT = watchos

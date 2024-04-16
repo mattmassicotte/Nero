@@ -1,5 +1,5 @@
 import XCTest
-@testable import Nero
+@testable import NeroWatch
 
 final class Nero_Watch_AppTests: XCTestCase {
 

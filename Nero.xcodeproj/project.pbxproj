@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C97C20082BCD399200D133A7 /* Nero Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C97C20072BCD399200D133A7 /* Nero Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C97C20082BCD399200D133A7 /* NeroWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C97C20072BCD399200D133A7 /* NeroWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C97C200D2BCD399200D133A7 /* NeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C200C2BCD399200D133A7 /* NeroApp.swift */; };
 		C97C200F2BCD399200D133A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C200E2BCD399200D133A7 /* ContentView.swift */; };
 		C97C20112BCD399400D133A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97C20102BCD399400D133A7 /* Assets.xcassets */; };
@@ -48,7 +48,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				C97C20082BCD399200D133A7 /* Nero Watch App.app in Embed Watch Content */,
+				C97C20082BCD399200D133A7 /* NeroWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +57,7 @@
 
 /* Begin PBXFileReference section */
 		C97C20012BCD399200D133A7 /* Nero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nero.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C97C20072BCD399200D133A7 /* Nero Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nero Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97C20072BCD399200D133A7 /* NeroWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeroWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97C200C2BCD399200D133A7 /* NeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeroApp.swift; sourceTree = "<group>"; };
 		C97C200E2BCD399200D133A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C97C20102BCD399400D133A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +68,7 @@
 		C97C20272BCD399400D133A7 /* Nero_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nero_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		C97C20292BCD399400D133A7 /* Nero_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nero_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C97C203B2BCD3A2400D133A7 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		C9E0B9EF2BCE95F8007AF034 /* NeroWatch.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = NeroWatch.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C97C20012BCD399200D133A7 /* Nero.app */,
-				C97C20072BCD399200D133A7 /* Nero Watch App.app */,
+				C97C20072BCD399200D133A7 /* NeroWatch.app */,
 				C97C20192BCD399400D133A7 /* Nero Watch AppTests.xctest */,
 				C97C20232BCD399400D133A7 /* Nero Watch AppUITests.xctest */,
 			);
@@ -157,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				C97C203B2BCD3A2400D133A7 /* Project.xcconfig */,
+				C9E0B9EF2BCE95F8007AF034 /* NeroWatch.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -195,7 +197,7 @@
 			);
 			name = "Nero Watch App";
 			productName = "Nero Watch App";
-			productReference = C97C20072BCD399200D133A7 /* Nero Watch App.app */;
+			productReference = C97C20072BCD399200D133A7 /* NeroWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C97C20182BCD399400D133A7 /* Nero Watch AppTests */ = {
@@ -471,6 +473,7 @@
 		};
 		C97C202E2BCD399400D133A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E0B9EF2BCE95F8007AF034 /* NeroWatch.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,15 +487,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_MODULE_NAME = Nero;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
 		};
 		C97C202F2BCD399400D133A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E0B9EF2BCE95F8007AF034 /* NeroWatch.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,9 +507,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_MODULE_NAME = Nero;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -546,7 +544,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nero Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nero Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeroWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NeroWatch";
 			};
 			name = Debug;
 		};
@@ -561,7 +559,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nero Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nero Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeroWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NeroWatch";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
