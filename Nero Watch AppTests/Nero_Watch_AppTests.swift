@@ -1,12 +1,5 @@
-//
-//  Nero_Watch_AppTests.swift
-//  Nero Watch AppTests
-//
-//  Created by Matthew Massicotte on 2024-04-15.
-//
-
 import XCTest
-@testable import Nero_Watch_App
+@testable import Nero
 
 final class Nero_Watch_AppTests: XCTestCase {
 
