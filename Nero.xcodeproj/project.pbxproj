@@ -15,6 +15,7 @@
 		C97C201E2BCD399400D133A7 /* Nero_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C201D2BCD399400D133A7 /* Nero_Watch_AppTests.swift */; };
 		C97C20282BCD399400D133A7 /* Nero_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C20272BCD399400D133A7 /* Nero_Watch_AppUITests.swift */; };
 		C97C202A2BCD399400D133A7 /* Nero_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C20292BCD399400D133A7 /* Nero_Watch_AppUITestsLaunchTests.swift */; };
+		C9E0B9F32BCFE472007AF034 /* ParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E0B9F22BCFE472007AF034 /* ParameterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		C97C20292BCD399400D133A7 /* Nero_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nero_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C97C203B2BCD3A2400D133A7 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		C9E0B9EF2BCE95F8007AF034 /* NeroWatch.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = NeroWatch.xcconfig; sourceTree = "<group>"; };
+		C9E0B9F22BCFE472007AF034 /* ParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				C97C200E2BCD399200D133A7 /* ContentView.swift */,
 				C97C20102BCD399400D133A7 /* Assets.xcassets */,
 				C97C20122BCD399400D133A7 /* Preview Content */,
+				C9E0B9F22BCFE472007AF034 /* ParameterView.swift */,
 			);
 			path = "Nero Watch App";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97C200F2BCD399200D133A7 /* ContentView.swift in Sources */,
+				C9E0B9F32BCFE472007AF034 /* ParameterView.swift in Sources */,
 				C97C200D2BCD399200D133A7 /* NeroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
