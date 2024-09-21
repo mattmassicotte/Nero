@@ -14,41 +14,65 @@ struct ParameterDataPoint: Identifiable {
 }
 
 struct ParameterView: View {
-	let dataPoints: [ParameterDataPoint] = [
+	@State private var dataPoints: [ParameterDataPoint] = [
 		.init(value: 33.0, date: Date(timeIntervalSinceNow: -15)),
-		.init(value: 34.0, date: Date(timeIntervalSinceNow: -10)),
+		.init(value: 36.0, date: Date(timeIntervalSinceNow: -10)),
 		.init(value: 35.0, date: Date(timeIntervalSinceNow: -5)),
-		.init(value: 36.0, date: Date(timeIntervalSinceNow: 0)),
+		.init(value: 32.0, date: Date(timeIntervalSinceNow: 0)),
 	]
 	let title: String
 	let value: Float
 	let unit: Dimension
 
 	var body: some View {
-		VStack {
-			Text(title)
-			Text(String(value))
-				.font(.largeTitle)
-			Text(unit.symbol)
-			Chart(dataPoints) {
-				LineMark(
-					x: .value("Time", $0.date),
-					y: .value("Value", $0.value)
-				)
-				.foregroundStyle(Color.white)
+		NavigationStack {
+			VStack {
+				Text(title)
+				Text(String(value))
+					.font(.largeTitle)
+				Text(unit.symbol)
+				Group {
+					Chart(dataPoints) {
+						LineMark(
+							x: .value("Time", $0.date),
+							y: .value("Value", $0.value)
+						)
+						.foregroundStyle(Color.white)
+						.symbol {
+							Circle()
+								.fill(Color.white)
+								.frame(width: 6, height: 6)
+						}
+					}
+					.chartXAxis {
+						//				AxisMarks(values: .stride(by: .month)) { value in
+						//					AxisGridLine()
+						//					AxisValueLabel(format: .dateTime.month(.defaultDigits))
+						//				}
+					}
+					.chartYAxis {
+						//				AxisMarks(values: [30, 31, 32, 33, 34, 35, 36, 37]) {
+						//					AxisGridLine()
+						//				}
+					}
+				}
+				.padding(8.0)
+				.frame(maxHeight: 120)
 			}
-			.chartXAxis {
-//				AxisMarks(values: .stride(by: .month)) { value in
-//					AxisGridLine()
-//					AxisValueLabel(format: .dateTime.month(.defaultDigits))
-//				}
+			.toolbar {
+				ToolbarItemGroup(placement: .bottomBar) {
+					Spacer()
+					Button {
+						let date = dataPoints.last!.date.addingTimeInterval(5.0)
+						let value = Float((30..<40).randomElement()!)
+						let point = ParameterDataPoint(value: value, date: date)
+
+						self.dataPoints.append(point)
+					} label: {
+						Label("Add", systemImage: "plus")
+					}
+				}
 			}
-			.chartYAxis {
-//				AxisMarks(values: [30, 31, 32, 33, 34, 35, 36, 37]) {
-//					AxisGridLine()
-//				}
-			}
-			.frame(height: 120)
 		}
 	}
 }
