@@ -1,18 +1,6 @@
 import SwiftUI
 import Charts
 
-extension UnitDispersion {
-	public class var partsPerThousand: UnitDispersion {
-		UnitDispersion(symbol: "ppt", converter: UnitConverter())
-	}
-}
-
-struct ParameterDataPoint: Identifiable {
-	let value: Float
-	let date: Date
-	let id = UUID()
-}
-
 struct ParameterView: View {
 	@State private var dataPoints: [ParameterDataPoint] = [
 		.init(value: 33.0, date: Date(timeIntervalSinceNow: -15)),
@@ -31,33 +19,9 @@ struct ParameterView: View {
 				Text(String(value))
 					.font(.largeTitle)
 				Text(unit.symbol)
-				Group {
-					Chart(dataPoints) {
-						LineMark(
-							x: .value("Time", $0.date),
-							y: .value("Value", $0.value)
-						)
-						.foregroundStyle(Color.white)
-						.symbol {
-							Circle()
-								.fill(Color.white)
-								.frame(width: 6, height: 6)
-						}
-					}
-					.chartXAxis {
-						//				AxisMarks(values: .stride(by: .month)) { value in
-						//					AxisGridLine()
-						//					AxisValueLabel(format: .dateTime.month(.defaultDigits))
-						//				}
-					}
-					.chartYAxis {
-						//				AxisMarks(values: [30, 31, 32, 33, 34, 35, 36, 37]) {
-						//					AxisGridLine()
-						//				}
-					}
-				}
-				.padding(8.0)
-				.frame(maxHeight: 120)
+				ParameterDataView(dataPoints: dataPoints)
+					.padding(8.0)
+					.frame(maxHeight: 120)
 			}
 			.toolbar {
 				ToolbarItemGroup(placement: .bottomBar) {

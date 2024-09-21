@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C946F45B2C9F797900739AA0 /* Unit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946F45A2C9F797900739AA0 /* Unit+Extensions.swift */; };
+		C946F45E2C9F79CE00739AA0 /* DataEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946F45D2C9F79CE00739AA0 /* DataEntryView.swift */; };
+		C946F4602C9F7A0800739AA0 /* ParameterDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946F45F2C9F7A0800739AA0 /* ParameterDataView.swift */; };
 		C97C20082BCD399200D133A7 /* NeroWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C97C20072BCD399200D133A7 /* NeroWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C97C200D2BCD399200D133A7 /* NeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C200C2BCD399200D133A7 /* NeroApp.swift */; };
 		C97C200F2BCD399200D133A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C200E2BCD399200D133A7 /* ContentView.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C946F45A2C9F797900739AA0 /* Unit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit+Extensions.swift"; sourceTree = "<group>"; };
+		C946F45D2C9F79CE00739AA0 /* DataEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryView.swift; sourceTree = "<group>"; };
+		C946F45F2C9F7A0800739AA0 /* ParameterDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterDataView.swift; sourceTree = "<group>"; };
 		C97C20012BCD399200D133A7 /* Nero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97C20072BCD399200D133A7 /* NeroWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeroWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97C200C2BCD399200D133A7 /* NeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeroApp.swift; sourceTree = "<group>"; };
@@ -123,11 +129,14 @@
 		C97C200B2BCD399200D133A7 /* Nero Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				C97C200C2BCD399200D133A7 /* NeroApp.swift */,
-				C97C200E2BCD399200D133A7 /* ContentView.swift */,
 				C97C20102BCD399400D133A7 /* Assets.xcassets */,
-				C97C20122BCD399400D133A7 /* Preview Content */,
+				C97C200E2BCD399200D133A7 /* ContentView.swift */,
+				C946F45D2C9F79CE00739AA0 /* DataEntryView.swift */,
+				C97C200C2BCD399200D133A7 /* NeroApp.swift */,
+				C946F45F2C9F7A0800739AA0 /* ParameterDataView.swift */,
 				C9E0B9F22BCFE472007AF034 /* ParameterView.swift */,
+				C97C20122BCD399400D133A7 /* Preview Content */,
+				C946F45A2C9F797900739AA0 /* Unit+Extensions.swift */,
 			);
 			path = "Nero Watch App";
 			sourceTree = "<group>";
@@ -160,8 +169,8 @@
 		C97C203A2BCD3A0000D133A7 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				C97C203B2BCD3A2400D133A7 /* Project.xcconfig */,
 				C9E0B9EF2BCE95F8007AF034 /* NeroWatch.xcconfig */,
+				C97C203B2BCD3A2400D133A7 /* Project.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -324,8 +333,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C946F45E2C9F79CE00739AA0 /* DataEntryView.swift in Sources */,
 				C97C200F2BCD399200D133A7 /* ContentView.swift in Sources */,
+				C946F45B2C9F797900739AA0 /* Unit+Extensions.swift in Sources */,
 				C9E0B9F32BCFE472007AF034 /* ParameterView.swift in Sources */,
+				C946F4602C9F7A0800739AA0 /* ParameterDataView.swift in Sources */,
 				C97C200D2BCD399200D133A7 /* NeroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
