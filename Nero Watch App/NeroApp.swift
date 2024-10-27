@@ -1,10 +1,3 @@
-//
-//  NeroApp.swift
-//  Nero Watch App
-//
-//  Created by Matthew Massicotte on 2024-04-15.
-//
-
 import SwiftUI
 
 @main
