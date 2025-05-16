@@ -1,13 +1,47 @@
 import SwiftUI
 
+@Observable
+final class Storage {
+	var stuff: [Int] {
+		// get some things from local storage
+		return [1, 2, 3]
+	}
+	
+	func addStuff() {
+		withMutation(keyPath: \.stuff) {
+			// write some things to local storage
+		}
+	}
+}
+
 struct ContentView: View {
+	let store: DataStore
+	
 	var body: some View {
 		TabView {
-			ParameterView(title: "Salinity", value: 35.0, unit: UnitDispersion.partsPerThousand)
+			ParameterView(
+				parameter: .salinity,
+				range: 0.0..<40.0,
+				store: store,
+				title: "Salinity",
+				unit: UnitDispersion.partsPerThousand
+			)
 				.containerBackground(.blue, for: .tabView)
-			ParameterView(title: "Nitrates", value: 30.8, unit: UnitDispersion.partsPerMillion)
+			ParameterView(
+				parameter: .nitrates,
+				range: 0.0..<40.0,
+				store: store,
+				title: "Nitrates",
+				unit: UnitDispersion.partsPerMillion
+			)
 				.containerBackground(.purple, for: .tabView)
-			ParameterView(title: "Ammonia", value: 0.4, unit: UnitDispersion.partsPerMillion)
+			ParameterView(
+				parameter: .ammonia,
+				range: 0.0..<1.0,
+				store: store,
+				title: "Ammonia",
+				unit: UnitDispersion.partsPerMillion
+			)
 				.containerBackground(.yellow, for: .tabView)
 
 		}
@@ -16,5 +50,5 @@ struct ContentView: View {
 }
 
 #Preview {
-	ContentView()
+	ContentView(store: DataStore())
 }

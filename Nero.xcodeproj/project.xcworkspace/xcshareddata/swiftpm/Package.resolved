@@ -1,0 +1,24 @@
+{
+  "originHash" : "e38a75c72c163a33cc21859b77d380a507224411aabab608653dae0e1d76cfb1",
+  "pins" : [
+    {
+      "identity" : "empire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mattmassicotte/Empire",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0108a8be347c0dfc2eb1181add78bde9eb2c6ba7"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

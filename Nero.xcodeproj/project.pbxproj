@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92887DD2DD687E5007F55A7 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92887DC2DD687E5007F55A7 /* DataStore.swift */; };
+		C92887E02DD688EC007F55A7 /* Empire in Frameworks */ = {isa = PBXBuildFile; productRef = C92887DF2DD688EC007F55A7 /* Empire */; };
 		C946F45B2C9F797900739AA0 /* Unit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946F45A2C9F797900739AA0 /* Unit+Extensions.swift */; };
 		C946F45E2C9F79CE00739AA0 /* DataEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946F45D2C9F79CE00739AA0 /* DataEntryView.swift */; };
 		C946F4602C9F7A0800739AA0 /* ParameterDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946F45F2C9F7A0800739AA0 /* ParameterDataView.swift */; };
@@ -18,6 +20,7 @@
 		C97C201E2BCD399400D133A7 /* Nero_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C201D2BCD399400D133A7 /* Nero_Watch_AppTests.swift */; };
 		C97C20282BCD399400D133A7 /* Nero_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C20272BCD399400D133A7 /* Nero_Watch_AppUITests.swift */; };
 		C97C202A2BCD399400D133A7 /* Nero_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C20292BCD399400D133A7 /* Nero_Watch_AppUITestsLaunchTests.swift */; };
+		C99653082CCE633F00F4530F /* MeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99653072CCE633F00F4530F /* MeasurementView.swift */; };
 		C9E0B9F32BCFE472007AF034 /* ParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E0B9F22BCFE472007AF034 /* ParameterView.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C92887DC2DD687E5007F55A7 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		C946F45A2C9F797900739AA0 /* Unit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit+Extensions.swift"; sourceTree = "<group>"; };
 		C946F45D2C9F79CE00739AA0 /* DataEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryView.swift; sourceTree = "<group>"; };
 		C946F45F2C9F7A0800739AA0 /* ParameterDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterDataView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		C97C20272BCD399400D133A7 /* Nero_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nero_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		C97C20292BCD399400D133A7 /* Nero_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nero_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C97C203B2BCD3A2400D133A7 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		C99653072CCE633F00F4530F /* MeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementView.swift; sourceTree = "<group>"; };
 		C9E0B9EF2BCE95F8007AF034 /* NeroWatch.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = NeroWatch.xcconfig; sourceTree = "<group>"; };
 		C9E0B9F22BCFE472007AF034 /* ParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92887E02DD688EC007F55A7 /* Empire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +135,7 @@
 		C97C200B2BCD399200D133A7 /* Nero Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				C92887DC2DD687E5007F55A7 /* DataStore.swift */,
 				C97C20102BCD399400D133A7 /* Assets.xcassets */,
 				C97C200E2BCD399200D133A7 /* ContentView.swift */,
 				C946F45D2C9F79CE00739AA0 /* DataEntryView.swift */,
@@ -137,6 +144,7 @@
 				C9E0B9F22BCFE472007AF034 /* ParameterView.swift */,
 				C97C20122BCD399400D133A7 /* Preview Content */,
 				C946F45A2C9F797900739AA0 /* Unit+Extensions.swift */,
+				C99653072CCE633F00F4530F /* MeasurementView.swift */,
 			);
 			path = "Nero Watch App";
 			sourceTree = "<group>";
@@ -283,6 +291,9 @@
 				Base,
 			);
 			mainGroup = C97C1FFA2BCD399200D133A7;
+			packageReferences = (
+				C92887DE2DD688EC007F55A7 /* XCRemoteSwiftPackageReference "Empire" */,
+			);
 			productRefGroup = C97C20022BCD399200D133A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -334,10 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C946F45E2C9F79CE00739AA0 /* DataEntryView.swift in Sources */,
+				C92887DD2DD687E5007F55A7 /* DataStore.swift in Sources */,
 				C97C200F2BCD399200D133A7 /* ContentView.swift in Sources */,
 				C946F45B2C9F797900739AA0 /* Unit+Extensions.swift in Sources */,
 				C9E0B9F32BCFE472007AF034 /* ParameterView.swift in Sources */,
 				C946F4602C9F7A0800739AA0 /* ParameterDataView.swift in Sources */,
+				C99653082CCE633F00F4530F /* MeasurementView.swift in Sources */,
 				C97C200D2BCD399200D133A7 /* NeroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +425,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 77X93NZ3G2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -470,6 +484,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 77X93NZ3G2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -658,6 +673,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C92887DE2DD688EC007F55A7 /* XCRemoteSwiftPackageReference "Empire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattmassicotte/Empire";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C92887DF2DD688EC007F55A7 /* Empire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C92887DE2DD688EC007F55A7 /* XCRemoteSwiftPackageReference "Empire" */;
+			productName = Empire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C97C1FFB2BCD399200D133A7 /* Project object */;
 }
